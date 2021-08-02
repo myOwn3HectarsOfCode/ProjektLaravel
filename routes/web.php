@@ -14,20 +14,13 @@ use App\Http\Controllers\Pierwszy;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
-//Route::get('/zalogowany', function () {
-    //return view('zalogowany');
-//});
+Route::get('/', 'App\Http\Controllers\Pierwszy@moja');
+Route::get('/zalogowany', 'App\Http\Controllers\Drugi@zalogowany'); 
+Route::get('/niezalogowany', 'App\Http\Controllers\Trzeci@wyloguj');
 
-//Route::get('/niezalogowany', function () {
-    //return view('index');
-//});
-Route::get('/welcome', [Pierwszy::class, 'moja']);
  
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Pierwszy extends Controller
+class Trzeci extends Controller
 {
     //
-    public function moja(){
+    public function wyloguj(){
         return view ('index');
     }
 }
