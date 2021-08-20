@@ -16,11 +16,15 @@ use App\Http\Controllers\Pierwszy;
 
 
 Route::get('/', 'App\Http\Controllers\Pierwszy@moja');
-Route::get('/zalogowany', 'App\Http\Controllers\Drugi@zalogowany'); 
-Route::get('/niezalogowany', 'App\Http\Controllers\Trzeci@wyloguj');
+//Route::get('/zalogowany', 'App\Http\Controllers\Drugi@zalogowany'); 
+
 
  
 
 Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
+Route::get('/aplikacja', 'App\Http\Controllers\Drugi@zalogowany')->name('wdomu');
+//Route::post('/a', 'App\Http\Controllers\Auth\LoginController@sprawdz_imie')->name('hej');
+

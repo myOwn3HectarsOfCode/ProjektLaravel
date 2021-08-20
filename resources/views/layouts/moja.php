@@ -94,6 +94,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pomoc do logowania</h6>
                         <a class="collapse-item"  href="{{ route('register') }}">Rejestracja</a>
+                        
                         <a class="collapse-item" href="forgot-password.html">Jeśli zapomnisz hasła</a>
                         <div class="collapse-divider"></div>
                     </div>
@@ -373,7 +374,7 @@
                    <div class="modal-footer">
                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Przypomnienie hasła</button>
                        <a class="btn btn-primary" href="zalogowany">Zaloguj</a>
-                       <a  class="btn btn-primary" href="{{ route('register') }}">Zarejestruj sie</a>
+                       <a  class="btn btn-primary" href="register.html">Zarejestruj sie</a>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">×</span>
                     </button>
