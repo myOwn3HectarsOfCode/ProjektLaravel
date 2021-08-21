@@ -109,7 +109,7 @@ return [
     'prohibited' => 'The :attribute field is prohibited.',
     'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
     'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
-    'same' => 'The :attribute and :other must match.',
+    'same' => ' :attribute po prawej i :other nie są takie same',
     'size' => [
         'numeric' => 'The :attribute must be :size.',
         'file' => 'The :attribute must be :size kilobytes.',
@@ -152,6 +152,6 @@ return [
     |
     */
 
-    'attributes' => ['name' => 'login','password' => 'hasło' ]
+    'attributes' => ['name' => 'login','password' => 'hasło', 'password_confirm' => 'hasło po lewej' ]
 
 ];

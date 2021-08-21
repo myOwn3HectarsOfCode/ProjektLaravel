@@ -101,6 +101,13 @@ p {
    color: #ffffff;
    font-size: 1rem;
    line-height: 1.5;}
+.czerwony
+{
+  color: #e74a3b;
+}
+btn-trzeci{
+   margin-top:10px;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -190,6 +197,11 @@ a:not([href]):not([class]) {
 a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
+}
+.pad
+{
+  padding-top:1em;
+  padding-right:0.7em;
 }
 
 pre,

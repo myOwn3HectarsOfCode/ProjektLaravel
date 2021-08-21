@@ -15,8 +15,8 @@ use App\Http\Controllers\Pierwszy;
 */
 
 
-Route::get('/', 'App\Http\Controllers\Pierwszy@moja');
-//Route::get('/zalogowany', 'App\Http\Controllers\Drugi@zalogowany'); 
+Route::get('/', 'App\Http\Controllers\Pierwszy@moja')->name('tu');
+
 
 
  
@@ -24,7 +24,7 @@ Route::get('/', 'App\Http\Controllers\Pierwszy@moja');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//Route::get('/register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
 Route::get('/aplikacja', 'App\Http\Controllers\Drugi@zalogowany')->name('wdomu');
-//Route::post('/a', 'App\Http\Controllers\Auth\LoginController@sprawdz_imie')->name('hej');
-
+Route::get('/zaloguj', 'App\Http\Controllers\Trzeci@zaloguj')->name('zaloguj');
+//Route::get('/index#', 'App\Http\Controllers\Pierwszy@moja')->name('skok');
+Route::get('/navi', 'App\Http\Controllers\Trzeci@navi');

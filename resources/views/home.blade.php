@@ -38,7 +38,7 @@
                         </div>
                     @endif
 
-                   <h1> {{ __('Zostałeś zarejestrowany.') }}</br> {{ ('Jesteś juz zalogowany, ') }}</br>
+                   <h1> {{ __('Zostałeś uwierzytelniony.') }}</br> {{ ('Jesteś juz zalogowany, ') }}</br>
                     {{ Auth::user()->name }}</h1></br>
                     <div class="row justify-content-left">
                     <form name ='logout-form' method ='POST' action="{{ route('logout') }}" >

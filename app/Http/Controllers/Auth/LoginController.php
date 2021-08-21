@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class LoginController extends Controller
 {
@@ -38,7 +42,15 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-   
-   
+   /* protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'name' => ['required', Rule::unique('users')->where(function ($query) {return $query->where('name', $_POST['name']);})],
+            'password' => ['required', 'string', 'min:8',],
+           
+        ]);}*/
 
-}
+
+   }
+
+

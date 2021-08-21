@@ -42,28 +42,13 @@
             </a>
             <li class="nav-item dropdown  no-arrow">
                 <a class="nav-link  dropdown-toggle" href="#" id="userDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                    data-toggle="modal" data-target="#logoutModal">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                     <img class="img-profile rounded-circle"
-                        src="img/g835.png">
+                        src="img/g835.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOGOWANIE
                 </a>
                 <!-- Dropdown - User Information -->
-                <div class="dropdown-menu dropdown-menu-right shadow "
-                    aria-labelledby="userDropdown">
-
-                    <a class=" dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    
-                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                       Zaloguj się
-                    </a>
-                 
-               
-
-                    <a class=" dropdown-item" href="forgot-password.html">
-                    <i class="fab fa-battle-net fa-sm fa-fw mr-2 text-gray-400"></i>
-                      Zresetuj hasło
-                    </a>
-</div>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -94,7 +79,6 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pomoc do logowania</h6>
                         <a class="collapse-item"  href="{{ route('register') }}">Rejestracja</a>
-                        <a class="collapse-item" href="forgot-password.html">Jeśli zapomnisz hasła</a>
                         <div class="collapse-divider"></div>
                     </div>
                 </div>
@@ -169,8 +153,8 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    
+                        
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
@@ -180,31 +164,19 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tu się zalogujesz</span>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <!--<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                  data-toggle="modal" data-target="#logoutModal>-->
+                                <span class="mr-2 d-none d-lg-inline text-black-50 small">LOGOWANIE</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/g835.png">
                             </a>
-                            <!-- Dropdown - User Information -->
-                            <div class=" dropdown-menu shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                            
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Zaloguj się
-                                </a>
-                            </div>
                         </li>
-                 
-                        
-
-
                     </ul>
                
                 </nav>
@@ -215,7 +187,8 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się zalogować</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się <a href="#" data-toggle="modal" data-target="#logoutModal">zalogować.<a></br>
+                    Jeśli tu wracasz oznacza to, że musisz się <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h1>
                        
                     </div>
 
@@ -325,7 +298,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span></br> </br>Szablon Bootstrap </br>Licencja: <a href="https://github.com/startbootstrap/startbootstrap-sb-admin-2/blob/master/LICENSE">MIT:</a></span>
+                        <span>Copyright &copy; Your Website 2021</span></br> </br>startbootstrap-sb-admin-2-gh-pages</br>customized by ola </br>Licencja: <a href="https://github.com/startbootstrap/startbootstrap-sb-admin-2/blob/master/LICENSE">MIT:</a></span>
                     </div>
                 </div>
             </footer>
@@ -341,49 +314,77 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-<form method="POST"> <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+ <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
+       
         <div class="modal-dialog" role="document">
-            <div class="modal-content ">
-                <div class="modal-header klass">
-                    <h5 class="modal-title" id="exampleModalLabel">PANEL LOGOWANIA</h5>
-                   </div>
-                   <table>
-                    <tr><td>
-                    <div class=" klassawewn">
-                        
-                  <div class="klassazewn"><label><h5 class="modal-title" id="exampleModalLabel">nazwa użytkownika:</h5></label></div>
-                  
-                    
-                        </td>
-             <td>
-                  <div class="klassazewn"><input type="text"></input></div></td></tr>
+            <div class="modal-content "></form>
+              
+             
+    <div class="card-body p-0">
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                            <div class="col-lg-7">
+                                <div class="pad">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Witaj!</br></h1>
+                                    </div>
+                                    <form class ="user" method="POST" action="{{ route('login') }}">
+                                       @csrf
+                                        <div class="form-group">
+                                            <input id="name" type="text" class="form-control form-control-user  @error('email') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="login"  autofocus>
+                                                
+                                                </input>
+                                        @error('name')
+                                  <span class="invalid-feedback" role="alert">
+                                 <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                        </div>
+                                        <div class="form-group">
+                                           
+                                                <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="hasło">
+
+@error('password')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                                            </input>
+                                        </div>
+                                        <div class="form-group user">
+                                        <button type="submit" class="btn btn-primary form-control-user btn-user btn-block">
+                                            Zaloguj
+</button>
+                                        </div>
+</form>
+                                        <form class=user>
+                                        <div class="btn-trzeci">
+                                        <a href="{{ route('register') }}" class="btn btn-info  btn-user btn-block">
+                                            Zarejestruj 
+                                        </a>
+                                        </div>
+                                      </form>
+                                        <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <tr>
-                  <div class=" klassawewn">
-                    <td>
-                  <div class="klassazewn"><label><h5 class="modal-title" id="exampleModalLabel">hasło:</h5></label></div>
-                    </td>
-                    <td>
-                  <div class="klassazewn"><input type="password"></input></div></div>
-                </td>
-                </tr>
-            </table>
-                   <div class="modal-body">Aby rozpocząć sesję kliknij "Zaloguj"</div>
-                   <div class="modal-footer">
-                       <button class="btn btn-secondary" type="button" data-dismiss="modal">Przypomnienie hasła</button>
-                       <a class="btn btn-primary" href="zalogowany">Zaloguj</a>
-                       <a  class="btn btn-primary" href="{{ route('register') }}">Zarejestruj sie</a>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                    </button>
-                   
-                
-                
                 
             </div>
-        </div>
-    </form>
+       <!-- </div>-->
+    
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

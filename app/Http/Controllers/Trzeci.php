@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 class Trzeci extends Controller
 {
     //
-    public function wyloguj(){
-        return view ('index');
+    public function zaloguj(){
+        return view ('logowanie');
     }
+    public function navi(){
+        return view ('layouts.navi');
+    }
+
 }
