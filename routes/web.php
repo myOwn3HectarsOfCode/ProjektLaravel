@@ -28,3 +28,4 @@ Route::get('/aplikacja', 'App\Http\Controllers\Drugi@zalogowany')->name('wdomu')
 Route::get('/zaloguj', 'App\Http\Controllers\Trzeci@zaloguj')->name('zaloguj');
 //Route::get('/index#', 'App\Http\Controllers\Pierwszy@moja')->name('skok');
 Route::get('/navi', 'App\Http\Controllers\Trzeci@navi');
+Route::get('/aplikacja/tabele', 'App\Http\Controllers\Czwarty@tabele')->name('tabele');

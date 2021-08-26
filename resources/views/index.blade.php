@@ -44,9 +44,11 @@
                 <a class="nav-link  dropdown-toggle" href="#" id="userDropdown" role="button"
                     
                     data-toggle="modal" data-target="#logoutModal">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                    <span class="mr-2 d-none d-lg-inline text-white-600 small">
                     <img class="img-profile rounded-circle"
-                        src="img/g835.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOGOWANIE
+                        src="img/g835.png">
+                        <hr>
+                       LOGOWANIE</span>
                 </a>
                 <!-- Dropdown - User Information -->
             </li>
@@ -172,7 +174,7 @@
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="modal" data-target="#logoutModal">
                             <!--<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                   data-toggle="modal" data-target="#logoutModal>-->
-                                <span class="mr-2 d-none d-lg-inline text-black-50 small">LOGOWANIE</span>
+                                <span class="mr-2 d-none d-lg-inline text-black-50">LOGOWANIE</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/g835.png">
                             </a>
@@ -187,8 +189,8 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się <a href="#" data-toggle="modal" data-target="#logoutModal">zalogować.<a></br>
-                    Jeśli tu wracasz oznacza to, że musisz się <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h1>
+                        <h3 class="h4 mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się <a href="#" data-toggle="modal" data-target="#logoutModal">zalogować.<a></br>
+                    Jeśli tu wracasz oznacza to, że musisz się <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h3>
                        
                     </div>
 

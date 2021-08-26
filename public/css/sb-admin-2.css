@@ -72,13 +72,37 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
-
+.col-lg-6-1{
+  position:flex;
+  display:inline;
+  background-color:red;
+}
+.radius{
+  border-radius:40%;
+}
+.card1{
+  background-color:rgb(238, 236, 212); 
+}
+.card-header2 {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgb(238, 236, 212);;
+  border-bottom: 1px solid #c1c3cc;
+}
+.card-header3 {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: red;
+  border-bottom: 1px solid #81838b;
+}
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
-
+.h1-primary, .h2-primary, .h3-primary, .h4-primary, .h5-primary, .h6-primary{
+  color: #323746;
+}  
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -104,6 +128,10 @@ p {
 .czerwony
 {
   color: #e74a3b;
+}
+.display{
+  display: inline;
+  
 }
 btn-trzeci{
    margin-top:10px;
