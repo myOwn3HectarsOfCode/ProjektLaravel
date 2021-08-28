@@ -41,14 +41,16 @@
                 <div class="sidebar-brand-text mx-3">Generator raportów<sup></sup></div>
             </a>
             <li class="nav-item dropdown  no-arrow">
-                <a class="nav-link  dropdown-toggle" href="#" id="userDropdown" role="button"
+                <a class="nav-link  center1 " href="#" id="userDropdown" role="button"
                     
                     data-toggle="modal" data-target="#logoutModal">
-                    <span class="mr-2 d-none d-lg-inline text-white-600 small">
+                    <span class="mr-2 d-none  d-lg-inline text-white-600 small"></span>
+                    LOGOWANIE</br>
                     <img class="img-profile rounded-circle"
-                        src="img/g835.png">
-                        <hr>
-                       LOGOWANIE</span>
+                        src="{{ asset('img/g835.png') }}">
+
+                      
+                  
                 </a>
                 <!-- Dropdown - User Information -->
             </li>
@@ -157,16 +159,19 @@
                     <!-- Topbar Search -->
                     
                         
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
+                         <!-- Topbar Search -->
+                         <form
+                            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Wyszukaj..."
+                                       aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    
+                        </form>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -174,7 +179,7 @@
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="modal" data-target="#logoutModal">
                             <!--<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                   data-toggle="modal" data-target="#logoutModal>-->
-                                <span class="mr-2 d-none d-lg-inline text-black-50">LOGOWANIE</span>
+                                <span class="mr-2 czarny center1 d-lg-inline small">LOGOWANIE</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/g835.png">
                             </a>
@@ -189,8 +194,8 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h3 class="h4 mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się <a href="#" data-toggle="modal" data-target="#logoutModal">zalogować.<a></br>
-                    Jeśli tu wracasz oznacza to, że musisz się <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h3>
+                        <h5 class=" mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się <a href="#" data-toggle="modal" data-target="#logoutModal">zalogować.<a></br>
+                    Jeśli tu wracasz oznacza to, że musisz się <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h4>
                        
                     </div>
 
@@ -335,7 +340,7 @@
                         <div class="row">
                             <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
                             <div class="col-lg-7">
-                                <div class="pad">
+                                <div class="p-5">
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Witaj!</br></h1>
                                     </div>
@@ -375,6 +380,13 @@
                                         </a>
                                         </div>
                                       </form>
+                                      <form class=user>
+                                                    <div class="btn-tzreci">
+                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                </form>
                                         <hr>
                                         </div>
                                     </div>

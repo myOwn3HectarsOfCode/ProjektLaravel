@@ -11,7 +11,7 @@ class Trzeci extends Controller
         return view ('logowanie');
     }
     public function navi(){
-        return view ('layouts.navi');
+        return view ('navi');
     }
 
 }
