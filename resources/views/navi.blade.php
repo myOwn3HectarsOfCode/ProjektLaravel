@@ -22,23 +22,15 @@
         <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet"> 
         <title>Generator raportów - Centrum</title>
     </head>
-
     <body id="page-top">
-
-
         <!-- Page Wrapper -->
         <div id="wrapper">
-
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"  id="accordionSidebar">
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                     <div class="sidebar-brand-icon ">
-
                         <i class="fas lewy fa-angle-up fa-leaf"></i>
-
-
                     </div>
                     <div class="sidebar-brand-text mx-3">Generator raportów <sup></sup></div>
                 </a>
@@ -50,36 +42,27 @@
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ Auth::user()->name }}</br>
                         <span class="mr-2 d-none d-lg-inline text-white-600 small">                              
-
                         </span> 
                         <img class="img-profile rounded-circle"
                              src="{{ asset('img/undraw_profile.svg') }}">
-
                     </a>
-
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow "
                          aria-labelledby="userDropdown">
-
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Wyloguj
-
-
                         </a>
                     </div>
                 </li>
                 <!-- Divider -->
                 <hr class="sidebar-divider my-0">
-
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
                     <a class="nav-link" href="#">
                         <i class="fas fa-hand-point-right"></i>
                         <span>Pulpit</span></a>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider">
 
@@ -87,7 +70,6 @@
                 <div class="sidebar-heading">
                     Interfejs - Panel zapytań
                 </div>
-
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -102,16 +84,14 @@
                             <a class="collapse-item" href="cards.html">csv</a>
                             <a class="collapse-item" href="cards.html">odt</a>
                         </div>
-
                     </div>
                 </li>
-
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                        aria-expanded="true" aria-controls="collapseUtilities">
                         <i class="fas fa-columns"></i>
-                        <span>Utilities</span>
+                        <span>Narzędzia</span>
                     </a>
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                          data-parent="#accordionSidebar">
@@ -124,15 +104,12 @@
                         </div>
                     </div>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider">
-
                 <!-- Heading -->
                 <div class="sidebar-heading">
                     Addons
                 </div>
-
                 <!-- Nav Item - Pages Collapse Menu -->
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
@@ -140,39 +117,30 @@
                         <i class="fas fa-fw fa-chart-area"></i>
                         <span>Charts</span></a>
                 </li>
-
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('tabele') }}">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Tables</span></a>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
-
                 <!-- Sidebar Toggler (Sidebar) -->
                 <div class="text-center d-none d-md-inline">
                     <button class="rounded-circle border-0" id="sidebarToggle"></button>
                 </div>
-
             </ul>
             <!-- End of Sidebar -->
-
             <!-- Content Wrapper -->
             <div id="content-wrapper" class="d-flex flex-column">
-
                 <!-- Main Content -->
                 <div id="content">
-
                     <!-- Topbar -->
                     <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
                         <!-- Sidebar Toggle (Topbar) -->
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-
                         <!-- Topbar Search -->
                         <form
                             class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -186,10 +154,8 @@
                                 </div>
                             </div>
                         </form>
-
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
-
                             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                             <li class="nav-item dropdown no-arrow d-sm-none">
                                 <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -219,7 +185,6 @@
                                 @endif
                                 <a class="nav-link dropdown-toggle " href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                     <span class="mr-2 d-none d-lg-inline text-gray-800 ">
                                         {{ Auth::user()->name }}
                                     </span>
@@ -233,24 +198,13 @@
                                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Profil
                                     </a>
-                                    <!--<a class="dropdown-item" href="#">
-                                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Activity Log
-                                    </a>
-                                    <div class="dropdown-divider"></div>-->
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> 
                                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Wyloguj
                                     </a>
                                 </div>
                             </li>
-
                         </ul>
-
                     </nav>
                     <!-- End of Topbar -->
                     <!-- Footer -->
@@ -267,22 +221,14 @@
                     <!-- End of Footer -->
                 </div>
             </div>
-
-
-
             <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                  aria-hidden="true">
-
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content "></form>
-
-
+                    <div class="modal-content ">
                         <div class="card-body p-0">
                             <!-- Outer Row -->
                             <div class="row justify-content-center">
-
                                 <div class="col-xl-10 col-lg-12 col-md-9">
-
                                     <div class="card o-hidden border-0 shadow-lg my-5">
                                         <div class="card-body p-0">
                                             <!-- Nested Row within Card Body -->
@@ -296,25 +242,22 @@
                                                         <form class ="user" method="POST" action="{{ route('logout') }}">
                                                             @csrf
                                                             <div class="form-group">
-
-
                                                             </div>
                                                             <div class="form-group">
-
                                                             </div>
                                                             <div class="form-group">
                                                                 <button type="submit" class="btn btn-primary btn-user btn-block">
                                                                     Wyloguj
                                                                 </button>
                                                             </div>
-</form>
-<form class=user>
-                                                    <div class="btn-tzreci">
-                                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">×</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                        </form>
+                                                        <form class=user>
+                                                            <div class="btn-tzreci">
+                                                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">×</span>
+                                                                </button>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,21 +266,16 @@
                                     <!-- Bootstrap core JavaScript-->
                                     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
                                     <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
                                     <!-- Core plugin JavaScript-->
                                     <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-
                                     <!-- Custom scripts for all pages-->
                                     <script src="{{ asset('vendor/js/sb-admin-2.min.js') }}"></script>
-
                                     <!-- Page level plugins -->
                                     <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
-
                                     <!-- Page level custom scripts -->
                                     <script src="{{ asset('vendor/js/demo/chart-area-demo.js') }}"></script>
                                     <script src="{{ asset('vendor/js/demo/chart-pie-demo.js') }}"></script>
                                     <script src="{{ asset('js/sb-admin-2.js') }}"></script>
-
                                 </div>
                             </div>
                         </div>

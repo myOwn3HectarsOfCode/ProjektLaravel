@@ -48,45 +48,23 @@
                             @csrf
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0 d-lg-block">
-                                    <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus> 
+                                    <input id="name" type="text" class="form-control form-control-user @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autofocus> 
                                             @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                                     </div>
-                                    <!--<div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name">
-                                    </div>-->
                                 </div>
-                               <!-- <div class="form-group">
-                                    <input type="email" id="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email"
-                                        placeholder="Email "> 
-
-                                        @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror 
-                                </div>-->
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0 ">
-                                        <input type="password" id="password" class="form-control form-control-user  @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="hasło">
+                                        <input type="password" id="password" class="form-control form-control-user  @error('password') is-invalid @enderror" name="password"  placeholder="hasło">
                                         @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                                     </div>
-                                   <!-- <div class="col-sm-6" mb-3 mb-sm-0>
-                                        <input type="password" id="password" class="form-control form-control-user" name="password" required autocomplete="new-password" placeholder="Powtórz hasło">
-                                        @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                    </div>-->
                                 </div>
                                
                                 <button type ="submit" class="btn btn-primary btn-user btn-block">
@@ -95,14 +73,31 @@
 </a>
                                 <hr>
                             </form>
-                            <hr>
-                           
-                               
-                           
-                            <div class="text-center">
-                                <form method="POST" action="route('login')">
-                                @csrf
-                                <a class="small" href="{{ route('login') }}">Masz już konto? Zaloguj się!</a>
+               
+                                <a class=" btn-user google2 btn-block small" href="{{ route('rej') }}">
+                                Masz już konto? Zarejestruj się!</a>
+                            
+                                
+</form>
+
+
+<form class="user">
+    <hr>
+    <div class="row">
+<div class="col-2">
+</div>   
+<div class="col-1">
+</div>
+<div class="col-4">
+</div>
+
+<div class="col-5">
+
+<a class="bialy btn-google btn-user" href="{{ route('tu') }}">
+                                                         powrót</a>
+
+
+</div>
 </form>
                             </div>
                         </div>

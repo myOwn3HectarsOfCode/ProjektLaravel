@@ -13,5 +13,7 @@ class Trzeci extends Controller
     public function navi(){
         return view ('navi');
     }
-
+    public function rej(){
+        return view ('auth.register');
+    }
 }

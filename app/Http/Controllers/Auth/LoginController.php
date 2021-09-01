@@ -9,7 +9,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Http\Controllers\Auth;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -42,15 +43,22 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-   /* protected function validator(array $data)
+    public function store(Request $request)
+{
+    $this->validate($request, [
+        'name' => 'exists:App\Models\User,name',
+        'password' => 'required',
+    ]);
+
+    // Create The Task...
+}
+    /*
+    protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', Rule::unique('users')->where(function ($query) {return $query->where('name', $_POST['name']);})],
-            'password' => ['required', 'string', 'min:8',],
-           
+            'name' => ['exists:App\Models\User,name',], 
+            'password' => ['required', 'string', 'min:8','passwords.user'],
         ]);}*/
-
-
    }
 
 

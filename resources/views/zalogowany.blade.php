@@ -47,40 +47,30 @@
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                         <img class="img-profile rounded-circle"
                              src="img/undraw_profile.svg">
-
                     </a>
-
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow "
                          aria-labelledby="userDropdown">
-
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Wyloguj
-
-
                         </a>
                     </div>
                 </li>
                 <!-- Divider -->
                 <hr class="sidebar-divider my-0">
-
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
                     <a class="nav-link" href="#">
                         <i class="fas fa-hand-point-right"></i>
                         <span>Pulpit</span></a>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider">
-
                 <!-- Heading -->
                 <div class="sidebar-heading">
                     Interfejs - Panel zapytań
                 </div>
-
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -95,10 +85,8 @@
                             <a class="collapse-item" href="cards.html">csv</a>
                             <a class="collapse-item" href="cards.html">odt</a>
                         </div>
-
                     </div>
                 </li>
-
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -117,15 +105,12 @@
                         </div>
                     </div>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider">
-
                 <!-- Heading -->
                 <div class="sidebar-heading">
                     Addons
                 </div>
-
                 <!-- Nav Item - Pages Collapse Menu -->
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
@@ -133,39 +118,30 @@
                         <i class="fas fa-fw fa-chart-area"></i>
                         <span>Charts</span></a>
                 </li>
-
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('tabele') }}">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Tables</span></a>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
-
                 <!-- Sidebar Toggler (Sidebar) -->
                 <div class="text-center d-none d-md-inline">
                     <button class="rounded-circle border-0" id="sidebarToggle"></button>
                 </div>
-
             </ul>
             <!-- End of Sidebar -->
-
             <!-- Content Wrapper -->
             <div id="content-wrapper" class="d-flex flex-column">
-
                 <!-- Main Content -->
                 <div id="content">
-
                     <!-- Topbar -->
                     <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
                         <!-- Sidebar Toggle (Topbar) -->
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-
                         <!-- Topbar Search -->
                         <form
                             class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -179,10 +155,8 @@
                                 </div>
                             </div>
                         </form>
-
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
-
                             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                             <li class="nav-item dropdown no-arrow d-sm-none">
                                 <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -220,30 +194,17 @@
                                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Profil
                                     </a>
-                                    <!--<a class="dropdown-item" href="#">
-                                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Settings
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Activity Log
-                                    </a>
-                                    <div class="dropdown-divider"></div>-->
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> 
                                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Wyloguj
                                     </a>
                                 </div>
                             </li>
-
                         </ul>
-
                     </nav>
                     <!-- End of Topbar -->
-
                     <!-- Begin Page Content -->
                     <div class="container-fluid">
-
                         <!-- Page Heading -->
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
                             <h1 class="h3 mb-0 text-gray-800">Pulpit</h1>
@@ -254,19 +215,11 @@
                         <div class="card-header2 shadow py-3 h5-primary ">Aplikacja pozwala na wizualizację danych z plików excel, csv i odt (np. sprzedaży) produktów
                         </div>  
                         <!--</div>-->
-
                         <!-- Content Row -->
                         <div class="row">
-
                             <!-- Earnings (Monthly) Card Example -->
-
-
                             <!-- Earnings (Monthly) Card Example -->
-
-
                             <!-- Earnings (Monthly) Card Example -->
-
-
                             <!-- Pending Requests Card Example -->
                             <div class="col-xl-3 col-md-6 mb-4">
                                 <!--<div class="card-header3 radius shadow h-100 py-2">-->
@@ -285,31 +238,8 @@
                                 <!-- </div>-->
                             </div>
                         </div>
-
                         <!-- Content Row -->
-
                         <div class="row">
-
-                            <!--<div class=" display col-lg-6 mb-4">
-                                 <div class=" col-lg-6 mb-4">
-                                    
-                                </div>
-                        <div class=" col-lg-6-1 mb-4">
-    
-                          
-                         
-                 <div class="card1 shadow mb-4">
-                     <div class="card-header2 shadow py-3 font-weight-bold h5-primary "><h5 class="m-0  text-primary">
-                         Zestawienia i wybieranie danych do analizy</h5><p><h6 class="m-0 h6-primary">Tu wkrótce pojawią się szczegółowe instrukcje pracy z plikami.</h6></p>
-                           </div>  
-                    </div>
-                            Approach 
-     
-    
-                        </div>
-                               
-                    </div>-->
-
                             <!-- Area Chart -->
                             <div class="display  col-xl-6 col-lg-6">
                                 <div class="card shadow mb-4">
@@ -351,20 +281,10 @@
                                 </div>
                             </div>
                             <!-- Short about application -->
-
                         </div>
                         <!-- Illustrations -->
-
-
-
-
-
-
-
                         <!-- Content Row -->
                         <div class="row">
-
-
                             <!-- Content Column -->
                             <div class="col-lg-6 mb-4">
 
@@ -408,20 +328,13 @@
                                 </div>
                                 <!-- Illustrations -->
                                 <!-- Approach -->
-
-
                                 <!-- Color System -->
-
                             </div>
-
                         </div>
-
-
                         <!-- /.container-fluid -->
                     </div>
                 </div>
                 <!-- End of Main Content -->
-
                 <!-- Footer -->
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
@@ -432,33 +345,24 @@
                 </footer>
             </div>
             <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
-
         <div class="modal-dialog" role="document">
-            <div class="modal-content "></form>
-
-
+            <div class="modal-content ">
                 <div class="card-body p-0">
                     <!-- Outer Row -->
                     <div class="row justify-content-center">
-
                         <div class="col-xl-10 col-lg-12 col-md-9">
-
                             <div class="card o-hidden border-0 shadow-lg my-5">
                                 <div class="card-body p-0">
                                     <!-- Nested Row within Card Body -->
@@ -472,11 +376,8 @@
                                                 <form class ="user" method="POST" action="{{ route('logout') }}">
                                                     @csrf
                                                     <div class="form-group">
-
-
                                                     </div>
                                                     <div class="form-group">
-
                                                     </div>
                                                     <div class="form-group">
                                                         <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -499,28 +400,25 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
-            <!-- Page level plugins -->
-            <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
-            <!-- Page level custom scripts -->
-            <script src="js/demo/chart-area-demo.js"></script>
-            <script src="js/demo/chart-pie-demo.js"></script>
-
-            </body>
-
-            </html>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+</body>
+</html>

@@ -177,8 +177,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="modal" data-target="#logoutModal">
-                            <!--<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                  data-toggle="modal" data-target="#logoutModal>-->
+            
                                 <span class="mr-2 czarny center1 d-lg-inline small">LOGOWANIE</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/g835.png">
@@ -194,8 +193,9 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h5 class=" mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się <a href="#" data-toggle="modal" data-target="#logoutModal">zalogować.<a></br>
-                    Jeśli tu wracasz oznacza to, że musisz się <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h4>
+                        <h5 class=" mb-0 text-gray-800">Aby korzystać z Generatora raportów </br>musisz się
+                                                        <a href="{{ route('login') }}">zalogować.</a></br><br>
+                                                        Jeśli tu wracasz to być może podałeś złe dane logowania.</br>Możesz się tutaj <a class="czerwony" href="{{ route('register') }}">zarejestrować.</a></h4>
                        
                     </div>
 
@@ -347,7 +347,7 @@
                                     <form class ="user" method="POST" action="{{ route('login') }}">
                                        @csrf
                                         <div class="form-group">
-                                            <input id="name" type="text" class="form-control form-control-user  @error('email') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="login"  autofocus>
+                                            <input id="name" type="text" class="form-control form-control-user  @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="login"  autofocus>
                                                 
                                                 </input>
                                         @error('name')

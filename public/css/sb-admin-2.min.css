@@ -74,15 +74,26 @@
 .bialy{
   color: white;
 }
-
+.btn-google2 {
+  color: #fff;
+  background-color: #e78413;
+  border-color: #fff;
+}
+.google2{
+  color: #e78413;
+  text-align: center;
+}
+.google2:hover{
+  color: #2f375c;
+  
+}
 .czerwony2{
   color: white;
-  
   background-color: red;
   border: solid 1px;
-  border-color: #2653d4;
-  border-radius: 0.35rem;
-  max-width: 30%;
+  border-color: red;
+  border-radius: rem;
+  max-width: 50%;
   font-size: 0.75rem;
 }
 .pad

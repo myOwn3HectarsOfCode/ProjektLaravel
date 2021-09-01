@@ -42,7 +42,7 @@ return [
     'distinct' => 'The :attribute field has a duplicate value.',
     'email' => 'The :attribute must be a valid email address.',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
-    'exists' => 'The selected :attribute is invalid.',
+    'exists' => 'Wybrany :attribute jest nieprawidłowy.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
     'gt' => [
@@ -99,7 +99,7 @@ return [
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => ' :attribute jest wymagane.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -137,7 +137,7 @@ return [
 
     'custom' => [
         'name' => [
-            'rule' => 'już jest',
+            'exists' => 'już jest',
         ],
     ],
 
@@ -152,6 +152,6 @@ return [
     |
     */
 
-    'attributes' => ['name' => 'login','password' => 'hasło', 'password_confirm' => 'hasło po lewej' ]
+    'attributes' => ['name' => 'login','password' => 'hasło', 'password_confirm' => 'hasło po lewej', ]
 
 ];

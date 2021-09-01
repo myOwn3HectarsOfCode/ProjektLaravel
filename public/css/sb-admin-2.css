@@ -149,9 +149,9 @@ p {
   color: white;
   background-color: red;
   border: solid 1px;
-  border-color: #2653d4;
+  border-color: red;
   border-radius: rem;
-  max-width: 30%;
+  max-width: 50%;
   font-size: 0.75rem;
 }
 .display{
@@ -10979,6 +10979,18 @@ form.user .btn-user {
   color: #fff;
   background-color: #ea4335;
   border-color: #fff;
+}
+.btn-google2 {
+  color: #fff;
+  background-color: #e78413;
+  border-color: #fff;
+}
+.google2{
+  color: #e78413;
+  text-align: center;
+}
+.google2:hover{
+  color: #2f375c;
 }
 
 .btn-google:hover {
