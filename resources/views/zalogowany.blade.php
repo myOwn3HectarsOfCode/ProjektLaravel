@@ -12,14 +12,15 @@
         <title>Generator raportów - Centrum</title>
 
         <!-- Custom fonts for this template-->
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
         <link
             href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
             rel="stylesheet">
 
         <!-- Custom styles for this template-->
-        <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+        <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/fontawesome-free/svgs/solid') }}">
+        <link href="{{ asset('vendor/fontawesome-free/css/fontawesome.min.css') }}" rel="stylesheet" type="text/css">
     </head>
 
     <body id="page-top">
@@ -81,11 +82,69 @@
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Formaty plików</h6>
-                            <a class="collapse-item" href="buttons.html">xlsx</a>
-                            <a class="collapse-item" href="cards.html">csv</a>
-                            <a class="collapse-item" href="cards.html">odt</a>
+
+
+                            <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-file-csv fa-sm fa-fw mr-2 text-black-400"></i>
+                                csv
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu bg-gradient-success text-white-400  shadow" id="jeden"
+                                 aria-labelledby="userDropdown">
+                                <a class="dropdown-item" id="dwa" role="button"  href="#">
+                                <i class="fas fa-table fa-sm fa-fw mr-2 text-black-400"></i>
+                                    NAZWY KOLUMN to pierwszy wiersz
+                                </a>
+                                <div class="dropdown-menu dropdown-toggle bg-gradient-success text-white-400  shadow" id="jeden"
+                                 aria-labelledby="userDropdown">cośtam</div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> 
+                                <i class="fas fa-columns fa-sm fa-fw mr-2 text-black-400"></i> 
+                                    BRAK nazw kolumn
+                                </a>
+                            </div>
+
+
+                            <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-file-alt fa-sm fa-fw mr-2 text-black-400"></i> 
+                                odt
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu shadow" id="jeden"
+                                 aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    
+                                NAZWY KOLUMN to pierwszy wiersz
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> 
+                                    <i class="fas fa-columns w mr-2 text-black-400"></i>
+                                    BRAK nazw kolumn
+                                </a>
+                            </div>
+                            <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-file-excel fa-sm fa-fw mr-2 text-black-400"></i>
+                                xlsx
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu shadow" id="jeden"
+                                 aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                NAZWY KOLUMN to pierwszy wiersz
+                                    
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> 
+                                    
+                                BRAK nazw kolumn
+                                </a>
+                            </div>
                         </div>
+
                     </div>
+
+                </li>
+
                 </li>
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">

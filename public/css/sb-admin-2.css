@@ -3105,10 +3105,10 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.85rem;
-  color: #858796;
+  color: #ffffff;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: rgb(202, 200, 60);
   background-clip: padding-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
@@ -4105,6 +4105,11 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+}
+.nav-link2 {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -7650,6 +7655,10 @@ button.bg-dark:focus {
   box-shadow: 0 0.125rem 0.25rem 0 rgba(58, 59, 69, 0.2) !important;
 }
 
+.shadow2 {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(20, 11, 0, 0.15) !important;
+}
+
 .shadow {
   box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
 }
@@ -9994,7 +10003,7 @@ a:focus {
 
 .bg-gradient-success {
   background-color: #1cc88a;
-  background-image: linear-gradient(180deg, #1cc88a 10%, #13855c 100%);
+  background-image: linear-gradient(180deg, #c8e9dd 10%, #5fe6b4 100%);
   background-size: cover;
 }
 
@@ -10318,7 +10327,15 @@ a:focus {
   padding-bottom: 0.75rem;
   color: #fff;
 }
-
+dropdown-item2 {
+  white-space: normal;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  line-height: 1.3rem;
+}
 .topbar .dropdown-list .dropdown-item {
   white-space: normal;
   padding-top: 0.5rem;
@@ -10356,7 +10373,7 @@ a:focus {
 }
 
 .topbar .dropdown-list .dropdown-item:active {
-  background-color: #eaecf4;
+  background-color: #87a8f0;
   color: #3a3b45;
 }
 
