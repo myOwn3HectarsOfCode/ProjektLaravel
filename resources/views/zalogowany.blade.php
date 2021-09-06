@@ -44,7 +44,11 @@
                 <li class="nav-item dropdown  no-arrow">
                     <a class="nav-link  dropdown-toggle" href="#" id="userDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{ Auth::user()->name }}</br>
+                       @if(Auth::user())
+                       {{ Auth::user()->name }}
+                       @else
+                       {{ route("wyjatek")}}
+                       @endif</br>
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                         <img class="img-profile rounded-circle"
                              src="img/undraw_profile.svg">
@@ -92,7 +96,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu bg-gradient-success text-white-400  shadow" id="jeden"
                                  aria-labelledby="userDropdown">
-                                <a class="dropdown-item" id="dwa" role="button"  href="#">
+                                <a class="dropdown-item" id="dwa" role="button"  href="{{ route('csv') }}">
                                 <i class="fas fa-table fa-sm fa-fw mr-2 text-black-400"></i>
                                     NAZWY KOLUMN to pierwszy wiersz
                                 </a>
@@ -242,7 +246,13 @@
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="mr-2 d-none d-lg-inline text-gray-800 ">{{ Auth::user()->name }}</span>
+                                    <span class="mr-2 d-none d-lg-inline text-gray-800 ">
+                                    @if(Auth::user())
+                       {{ Auth::user()->name }}
+                       @else
+                       {{ route("tu") }}
+                       @endif
+                                    </span>
                                     <img class="img-profile rounded-circle"
                                          src="img/undraw_profile.svg">
                                 </a>

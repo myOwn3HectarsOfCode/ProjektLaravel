@@ -40,7 +40,11 @@
                     @endif
                     <a class="nav-link  dropdown-toggle" href="#" id="userDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{ Auth::user()->name }}</br>
+                      
+                       </br>
+                       
+                       {{ Auth::user()->name }}
+                     
                         <span class="mr-2 d-none d-lg-inline text-white-600 small">                              
                         </span> 
                         <img class="img-profile rounded-circle"
@@ -80,12 +84,69 @@
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Formaty plików</h6>
-                            <a class="collapse-item" href="buttons.html">xlsx</a>
-                            <a class="collapse-item" href="cards.html">csv</a>
-                            <a class="collapse-item" href="cards.html">odt</a>
+
+
+                            <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-file-csv fa-sm fa-fw mr-2 text-black-400"></i>
+                                csv
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu bg-gradient-success text-white-400  shadow" id="jeden"
+                                 aria-labelledby="userDropdown">
+                                <a class="dropdown-item" id="dwa" role="button"  href="{{ route('csv') }}">
+                                <i class="fas fa-table fa-sm fa-fw mr-2 text-black-400"></i>
+                                    NAZWY KOLUMN to pierwszy wiersz
+                                </a>
+                                <div class="dropdown-menu dropdown-toggle bg-gradient-success text-white-400  shadow" id="jeden"
+                                 aria-labelledby="userDropdown">cośtam</div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModa"> 
+                                <i class="fas fa-columns fa-sm fa-fw mr-2 text-black-400"></i> 
+                                    BRAK nazw kolumn
+                                </a>
+                            </div>
+
+
+                            <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-file-alt fa-sm fa-fw mr-2 text-black-400"></i> 
+                                odt
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu shadow" id="jeden"
+                                 aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    
+                                NAZWY KOLUMN to pierwszy wiersz
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModa"> 
+                                    <i class="fas fa-columns w mr-2 text-black-400"></i>
+                                    BRAK nazw kolumn
+                                </a>
+                            </div>
+                            <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="fas fa-file-excel fa-sm fa-fw mr-2 text-black-400"></i>
+                                xlsx
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu shadow" id="jeden"
+                                 aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                NAZWY KOLUMN to pierwszy wiersz
+                                    
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModa"> 
+                                    
+                                BRAK nazw kolumn
+                                </a>
+                            </div>
                         </div>
+
                     </div>
+
                 </li>
+
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -186,7 +247,9 @@
                                 <a class="nav-link dropdown-toggle " href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-800 ">
-                                        {{ Auth::user()->name }}
+                                   
+                       {{ Auth::user()->name }}
+                     
                                     </span>
                                     <img class="img-profile rounded-circle"
                                          src="{{ asset('img/undraw_profile.svg') }}">
@@ -211,13 +274,7 @@
                     <div class="content">
                         @yield('content1')
                     </div>
-                    <footer class="sticky-footer bg-white">
-                        <div class="container my-auto">
-                            <div class="copyright text-center my-auto">
-                                <span>Copyright &copy; Your Website 2021</span></br> </br>startbootstrap-sb-admin-2-gh-pages</br>customized by ola </br>Licencja: <a href="https://github.com/startbootstrap/startbootstrap-sb-admin-2/blob/master/LICENSE">MIT:</a></span>
-                            </div>
-                        </div>
-                    </footer>
+              
                     <!-- End of Footer -->
                 </div>
             </div>

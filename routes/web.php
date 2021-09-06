@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//dopisane przeze mnie 
+//dopisane przeze mnie
 use App\Http\Controllers\Pierwszy;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,5 +30,5 @@ Route::get('/zaloguj', 'App\Http\Controllers\Trzeci@zaloguj')->name('zaloguj');
 Route::get('/navi', 'App\Http\Controllers\Trzeci@navi');
 Route::get('/aplikacja/tabele', 'App\Http\Controllers\Czwarty@tabele')->name('tabele');
 Route::get('/login/rej', 'App\Http\Controllers\Trzeci@rej')->name('rej');
-
-
+Route::get('/aplikacja/csv', 'App\Http\Controllers\Trzeci@csv')->name('csv');
+Route::post('aplikacja/csv/podejrzyj', 'App\Http\Controllers\CsvController@pobranie')->name('podejrzyj');
