@@ -20,7 +20,7 @@
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    Spróbuj dodać plik<br>korzystając  z bocznego paka nawigacyjnego</br>
+                    Spróbuj dodać plik<br>korzystając  z bocznego paska nawigacyjnego</br>
                     <img src="{{ asset('vendor/fontawesome-free/svgs/solid/smile-wink.svg') }}"/>                                   
                 </div>
 
