@@ -1,1 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 180 150"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="arrow-left.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   width="180"
+   height="150">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="1.5625"
+     inkscape:cx="224"
+     inkscape:cy="204.8"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     inkscape:document-rotation="0" />
+  <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+  <path
+     d="m 49.53509,16.50382 -13.89032,-0.0735 c -5.88149,-0.0311 -11.39479,4.0769 -12.29611,9.16198 L 3.93205,131.28753 c -0.93759,5.1121 3.0596,9.27045 8.91479,9.27422 l 121.63417,0.64364 c 5.88149,0.0311 11.39479,-4.0769 12.29611,-9.16197 l 2.21433,-12.07326 c 0.94756,-5.16648 -3.20105,-9.35286 -9.16506,-9.27555 l -73.89672,1.16042 104.24494,-77.6741 c 4.82414,-3.59452 5.8914,-9.41362 2.39386,-13.05217 l -8.41513,-8.75442 C 160.6558,8.73578 153.96091,8.70036 149.13678,12.29484 L 44.89184,89.96893 58.40998,25.99554 c 1.10897,-5.19286 -2.89456,-9.48733 -8.87489,-9.49176 z"
+     id="path2"
+     style="fill:#b3b3b3;stroke-width:0.412676" />
+</svg>

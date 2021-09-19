@@ -1,4 +1,4 @@
-@extends('navi')
+@extends('layouts.navi_waski')
 
 @section('content1')
  <!-- Begin Page Content -->

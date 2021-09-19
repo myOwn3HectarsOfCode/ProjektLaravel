@@ -18,16 +18,11 @@ use App\Http\Controllers\Pierwszy;
 
 Route::get('/', 'App\Http\Controllers\Pierwszy@moja')->name('tu');
 
-
-
- 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/aplikacja', 'App\Http\Controllers\Drugi@zalogowany')->name('wdomu');
 Route::get('/zaloguj', 'App\Http\Controllers\Trzeci@zaloguj')->name('zaloguj');
-Route::get('/navi', 'App\Http\Controllers\Trzeci@navi');
 Route::get('/aplikacja/tabele', 'App\Http\Controllers\Czwarty@tabele')->name('tabele');
 Route::get('/login/rej', 'App\Http\Controllers\Trzeci@rej')->name('rej');
 Route::get('/aplikacja/csv', 'App\Http\Controllers\Trzeci@csv')->name('csv');

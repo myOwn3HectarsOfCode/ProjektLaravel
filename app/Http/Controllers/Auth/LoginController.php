@@ -33,6 +33,7 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+    
 
     /**
      * Create a new controller instance.
@@ -44,21 +45,12 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
     public function store(Request $request)
-{
-    $this->validate($request, [
+    {
+        $this->validate($request, [
         'name' => 'exists:App\Models\User,name',
         'password' => 'required',
     ]);
 
-    // Create The Task...
+        // Create The Task...
+    }
 }
-    /*
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => ['exists:App\Models\User,name',], 
-            'password' => ['required', 'string', 'min:8','passwords.user'],
-        ]);}*/
-   }
-
-

@@ -26,7 +26,7 @@
         <!-- Page Wrapper -->
         <div id="wrapper">
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"  id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion "  id="accordionSidebar">
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                     <div class="sidebar-brand-icon ">
@@ -40,13 +40,15 @@
                     @endif
                     <a class="nav-link  dropdown-toggle" href="#" id="userDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      
-                       </br>
-                       
-                       {{ Auth::user()->name }}
-                     
+
+                        </br>
+                        @if(isset(Auth::user()->name))
+                        {{ Auth::user()->name }}
+                        @else
+                        {{ Auth::route('wyjatek') }}
+                        @endif
                         <span class="mr-2 d-none d-lg-inline text-white-600 small">                              
-                        </span> 
+                        </span> <br>
                         <img class="img-profile rounded-circle"
                              src="{{ asset('img/undraw_profile.svg') }}">
                     </a>
@@ -88,20 +90,20 @@
 
                             <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <i class="fas fa-file-csv fa-sm fa-fw mr-2 text-black-400"></i>
+                                <i class="fas fa-file-csv fa-sm fa-fw mr-2 text-black-400"></i>
                                 csv
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu bg-gradient-success text-white-400  shadow" id="jeden"
                                  aria-labelledby="userDropdown">
                                 <a class="dropdown-item" id="dwa" role="button"  href="{{ route('csv') }}">
-                                <i class="fas fa-table fa-sm fa-fw mr-2 text-black-400"></i>
+                                    <i class="fas fa-table fa-sm fa-fw mr-2 text-black-400"></i>
                                     NAZWY KOLUMN to pierwszy wiersz
                                 </a>
                                 <div class="dropdown-menu dropdown-toggle bg-gradient-success text-white-400  shadow" id="jeden"
-                                 aria-labelledby="userDropdown">cośtam</div>
+                                     aria-labelledby="userDropdown">cośtam</div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModa"> 
-                                <i class="fas fa-columns fa-sm fa-fw mr-2 text-black-400"></i> 
+                                    <i class="fas fa-columns fa-sm fa-fw mr-2 text-black-400"></i> 
                                     BRAK nazw kolumn
                                 </a>
                             </div>
@@ -109,15 +111,15 @@
 
                             <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <i class="fas fa-file-alt fa-sm fa-fw mr-2 text-black-400"></i> 
+                                <i class="fas fa-file-alt fa-sm fa-fw mr-2 text-black-400"></i> 
                                 odt
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu shadow" id="jeden"
                                  aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                    
-                                NAZWY KOLUMN to pierwszy wiersz
+
+                                    NAZWY KOLUMN to pierwszy wiersz
                                 </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModa"> 
                                     <i class="fas fa-columns w mr-2 text-black-400"></i>
@@ -126,19 +128,19 @@
                             </div>
                             <a class="nav-link2 dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <i class="fas fa-file-excel fa-sm fa-fw mr-2 text-black-400"></i>
+                                <i class="fas fa-file-excel fa-sm fa-fw mr-2 text-black-400"></i>
                                 xlsx
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu shadow" id="jeden"
                                  aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
-                                NAZWY KOLUMN to pierwszy wiersz
-                                    
+                                    NAZWY KOLUMN to pierwszy wiersz
+
                                 </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModa"> 
-                                    
-                                BRAK nazw kolumn
+
+                                    BRAK nazw kolumn
                                 </a>
                             </div>
                         </div>
@@ -247,9 +249,12 @@
                                 <a class="nav-link dropdown-toggle " href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-800 ">
-                                   
-                       {{ Auth::user()->name }}
-                     
+
+                                        @if(isset(Auth::user()->name))  
+                                        {{ Auth::user()->name }}
+                                        @else(Auth::route('wyjatek'))
+                                        @endif
+
                                     </span>
                                     <img class="img-profile rounded-circle"
                                          src="{{ asset('img/undraw_profile.svg') }}">
@@ -271,13 +276,22 @@
                     </nav>
                     <!-- End of Topbar -->
                     <!-- Footer -->
-                    <div class="content">
+                    <div class="content content1 content2">
                         @yield('content1')
+                        @yield('content2')
                     </div>
               
                     <!-- End of Footer -->
                 </div>
+              
             </div>
+            <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Copyright &copy; Your Website 2021</span></br> </br>startbootstrap-sb-admin-2-gh-pages</br>customized by ola </br>Licencja: <a href="https://github.com/startbootstrap/startbootstrap-sb-admin-2/blob/master/LICENSE">MIT:</a></span>
+                            </div>
+                        </div>
+                    </footer>  
             <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -319,7 +333,9 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
+
                                     <!-- Bootstrap core JavaScript-->
                                     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
                                     <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -339,7 +355,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
+
+
+
     </body>
     <!--</div>content-wraper-->
     <!--</div>content-->

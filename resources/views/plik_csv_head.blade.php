@@ -1,4 +1,4 @@
-@extends('navi')
+@extends('layouts.navi_szeroki')
 
 @section('content1')
 
@@ -16,12 +16,13 @@
                                                         <div class="text-left">
                                                             <h1 class="h4 text-gray-900 mb-4">Dodaj plik .csv</br></h1>
                                                         </div>
-                                                        <form class ="user" method="POST" action="{{ route('podejrzyj') }}">
+                                                        <form class ="user" enctype=”multipart/form-data” method="POST" action="{{ route('podejrzyj') }}">
                                                             @csrf
                                           
                                                             <div class="form-group upload">
                                           
                                                             <input id="csv" type="file" name="csv" class="form-control form-control-user upload"></input>    
+                                                            <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
                                                             </div>
                                                             <div class="form-group">
                                                             </div>
