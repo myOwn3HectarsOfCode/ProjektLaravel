@@ -14,6 +14,9 @@
     padding: 0.5rem 0.75rem;
     border-color:gray;
   }
+  .zielony{
+    color: #428C78;
+  }
  h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}abbr[data-original-title],abbr[title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}.center {border-radius: 0.35rem;
   text-align: center;
   vertical-align: middle;

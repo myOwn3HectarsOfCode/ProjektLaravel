@@ -280,8 +280,8 @@
                     <!-- End of Topbar --><div>
 
                         <!-- Begin Page Content -->
-                        <div class="container-fluid">
-                            <h5>Korzystanie z GENERATORA RAPORTÓW</h5>
+                        <div class="zielony container-fluid">
+                            <h5><b>Korzystanie z GENERATORA RAPORTÓW</b></h5>
                             <div class="row">
 
                                 @if(isset(Auth::user()->name))                           
@@ -289,8 +289,8 @@
                                 <div class="col-lg-6 mb-4">
 
                                     <div class="card shadow mb-4">
-                                        <div class="card-header py-3">
-                                            Spróbuj dodać plik<br>korzystając  z bocznego paka nawigacyjnego</br>
+                                        <div class="card-header zielony py-3">
+                                            Spróbuj dodać plik<br>korzystając  z bocznego paska nawigacyjnego</br>
                                             <img src="{{ asset('vendor/fontawesome-free/svgs/solid/smile-wink.svg') }}"/>                                   
                                         </div>
 

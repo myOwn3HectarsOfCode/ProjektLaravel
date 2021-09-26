@@ -18,11 +18,11 @@
                                                         </div>
                                                         <form class ="user" enctype=”multipart/form-data” method="POST" action="{{ route('podejrzyj') }}">
                                                             @csrf
-                                          
+                                                            
                                                             <div class="form-group upload">
                                           
                                                             <input id="csv" type="file" name="csv" class="form-control form-control-user upload"></input>    
-                                                            <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
+                                                            <input type="hidden" name="MAX_FILE_SIZE" value="512000"></input>
                                                             </div>
                                                             <div class="form-group">
                                                             </div>

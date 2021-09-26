@@ -6,7 +6,8 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        
+        <script src="{{ asset('vendor/chart.js/klikniecie4.js') }}" defer></script>
         <!-- Custom styles for this template-->
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -346,8 +347,7 @@
                                     <!-- Page level plugins -->
                                     <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
                                     <!-- Page level custom scripts -->
-                                    <script src="{{ asset('vendor/js/demo/chart-area-demo.js') }}"></script>
-                                    <script src="{{ asset('vendor/js/demo/chart-pie-demo.js') }}"></script>
+                                  
                                     <script src="{{ asset('js/sb-admin-2.js') }}"></script>
                                 </div>
                             </div>

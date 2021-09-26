@@ -10,6 +10,9 @@ use Illuminate\Http\File;
 use App\Http\Requests\DostawcaCsvRequest;
 //use App\Providers\CsvImportProvider;
 use App\Http\Controllers\Controller;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
+use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
+use Symfony\Component\Mime\MimeTypes;
 
 class CsvController extends Controller
 {
@@ -27,6 +30,7 @@ class CsvController extends Controller
     public static $linia; //string from fileline got from file
     public static $zaw_bez_nag = [];// double table $komorki_kolejne without headers( name of colummns)
     public static $id_nagl='';//helps by looking for getElementsById in html
+    public static $sciezka;
 
     
     public static function pobranie(Request $request)
@@ -39,7 +43,10 @@ class CsvController extends Controller
         $d=$request->input('csv');
         $file=new UploadedFile($d, '');
         $plik = fopen($c.'\\'.$d, 'r');
-           
+        //$path = $request->path();
+        $path = $_FILES;
+        $tmpname = $request->path();
+        move_uploaded_file($tmpname, $c.'\\'.$d);
         while (!feof($plik)) {
             $linia = fgets($plik);
             $zawartosc [$count] = $linia;
@@ -64,6 +71,8 @@ class CsvController extends Controller
         
         self::$zawartosc = $zawartosc;
         self::$zaw_bez_nag = array_slice(self::$komorki_kolejne, 1);
+        self::$sciezka = $path;
+
         return view('csv_naz_kol');
     }
 }
