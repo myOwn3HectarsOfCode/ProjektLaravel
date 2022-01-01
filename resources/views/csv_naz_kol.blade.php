@@ -5,7 +5,7 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3" >
 <div class="card-body" >
-    <p class="czarny"><b>TYTUŁY KOLUMN.</b><br>Kliknij wybrane tytuły kolumn celem importu do bazy<br>lub wybierz 2 kolumny aby szybko zwizualizować dane w postaci wykresu</p>
+    <p class="czarny"><b>TYTUŁY KOLUMN</b><br>Kliknij wybrane tytuły kolumn celem importu do bazy<br>lub wybierz 2 kolumny aby szybko zwizualizować dane w postaci wykresu</p>
 
     <form class="user" id="karta">
      @csrf 
