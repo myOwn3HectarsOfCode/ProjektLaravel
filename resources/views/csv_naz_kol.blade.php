@@ -3,12 +3,13 @@
 @section('content1')
 <div class="container-fluid">
 <div class="card shadow mb-4">
-    <div class="card-header py-3">
-<div class="card-body">
-    <p class="czarny">Nazwy</p>
+    <div class="card-header py-3" >
+<div class="card-body" >
+    <p class="czarny"><b>TYTUŁY KOLUMN.</b><br>Kliknij wybrane tytuły kolumn celem importu do bazy<br>lub wybierz 2 kolumny aby szybko zwizualizować dane w postaci wykresu</p>
 
-    <form class="user">
+    <form class="user" id="karta">
      @csrf 
+     <!-- this div is the trace for my learning and does'nt mean anything -->
      <div class="d-none">
      {{ $zmienna=0}}
      {{ $i=0}}
@@ -23,7 +24,12 @@
          </div>
          </form>  
          </p> 
-
+         <div class="text-right">
+         <button class="text-white-600 small user2 btn-google" type="submit" onclick="d()">Import do bazy
+</button>
+<button class="text-white-600 small user2 btn-facebook" type="submit" onclick="">Zobacz wykres
+</button>
+</div>
 </div>
 </div>
 </div>
@@ -32,10 +38,9 @@
 <div class="card shadow mb-4 ">
     <div class="card-header py-3">
 <div class="card-body">
-<b class="czarny">PODGLĄD TABELI (kliknij wybrane tytuły kolumn w celu importu)</b>
+<b class="czarny">PODGLĄD TABELI </b>
 
-<button class="text-white-600 small user2 btn-google" type="submit" onclick="d()">Import do bazy
-</button>
+
 
         <div class="table-responsive  Container Flipped">
             <div class="Flipped Content">

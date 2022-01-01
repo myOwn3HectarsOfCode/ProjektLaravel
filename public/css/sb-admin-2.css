@@ -8062,7 +8062,12 @@ button.bg-dark:focus {
 .p-5 {
   padding: 3rem !important;
 }
-
+.p-6 {
+  padding-top: 3rem !important;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  line-height: 90%;
+}
 .pt-5,
 .py-5 {
   padding-top: 3rem !important;

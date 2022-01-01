@@ -9,7 +9,6 @@ var parent;
 var count=0;
 tablica = document.getElementsByTagName("input");
 
-//ZBIERANIE INPUTÓW Z CAŁEGO DOKUMENTU 
      for(var i=0,j=0;i<tablica.length;i++,j++){
          tablica2[j]=tablica[i]; 
 
@@ -23,10 +22,12 @@ tablica = document.getElementsByTagName("input");
                     }
                 
  function c() {
+     var f;
         parent = document.querySelector(".classs");
         tablica3 = parent.getElementsByTagName("button");
      parent.addEventListener("click", ev =>
       { 
+   
    if(ev.target.id=='zbiornik'){}
    else
 { 
@@ -39,36 +40,55 @@ tablica = document.getElementsByTagName("input");
 
 
  function d() {
-// from table tab_tytulow,for where has clicks clicked button, we must delete repeated writes (I dont know why clicks repeates) 
+     
+    /*for(var i=0;i<=tab_tytulow.length;i++){ 
+           a= tab_tytulow[tab_tytulow.length];
+    
+    if(a==tab_tytulow[i]){
+        tab_tytulow[i] = tab_tytulow[j];
+    }
+    else { r+=tab_tytulow[j]+'\n';
+}*/
+    
+
      for(var i=0,j=1,k=0; i<tab_tytulow.length;i++,j++){ 
        var a =tab_tytulow[i];
          if(a!==tab_tytulow[j]&& a!==null){
             tab_tytulow2[k] = a;
             k++;
          }
+        
+         //console.log(tab_tytulow2[k]);
         }
+       
+/*there are 2 right way to print of conntent:
+alert(r);
+var fa=document.getElementById("zbiornik");
+fa.textContent=r;*/
+ //maybe  hidden inputs?
+ /*
+ yes - now (in onclick d()- click on "Import do bazy") js makes hidden inputs for choosed by user column-names in the div: "zbiornik".
+ This is form passed on by routing to base (but in php e.g. echo"<input type="hidden..... - hmmm...how will do deal the blade-templates with this...?
+ */ 
  var fa=document.getElementById("zbiornik");
+ //seting text in div zbiornik:
+ //fa.textContent=r;
  var ra= document.getElementById("karta");
- //we delete all buttons (child) with header of column from parent )"karta"
     ra.removeChild(fa);
-    //create element div
 na= document.createElement('div');
-//adding this div as child-element
 ra.appendChild(na);
-//setting atribute id
     na.setAttribute("id","zbiornik");
     
-    //here we create inputs with atributes, to passing on choosed by user names of columns of csv to database
  for(var c=0;c<tab_tytulow2.length;c++){
    var la = document.createElement('input');
     na.appendChild(la);
     la.setAttribute("id",tab_tytulow2[c]);
-    la.setAttribute("type","hidden");
+   // la.setAttribute("type","hidden");
     la.setAttribute("name",tab_tytulow2[c]);
-    la.setAttribute("value",tab_tytulow2[c]);  
-    
+    la.setAttribute("value",tab_tytulow2[c]);
+  //console.log(tab_tytulow[c]);
+   
  }
- 
 }
  
 

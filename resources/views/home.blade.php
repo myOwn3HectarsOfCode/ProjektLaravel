@@ -32,14 +32,14 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (!session('status'))
+                    @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
                    <h2> {{ __('Zostałeś uwierzytelniony.') }}</br> {{ ('Jesteś już zalogowany, ') }}</br>
-                    {{ Auth::user()->name }}</h2></br>
+                   <b>{{ Auth::user()->name }}</b></h2></br>
                     <div class="row justify-content-left">
                     <form name ='logout-form' method ='POST' action="{{ route('logout') }}" >
                      @csrf

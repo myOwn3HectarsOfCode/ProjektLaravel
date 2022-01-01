@@ -12,24 +12,28 @@
                                             <div class="col-lg-2">
                                             </div>
                                                 <div class="col-lg-7">
-                                                    <div class="p-5">
+                                                    <div class="p-6">
                                                         <div class="text-left">
-                                                            <h1 class="h4 text-gray-900 mb-4">Dodaj plik .csv</br></h1>
+                                                            <span class="h2 text-gray-900 mb-4">Dodaj plik .csv</span>
+                                                            <p class="body text-gray-900 mb-4"> (kodowanie utf-8}</p>
                                                         </div>
-                                                        <form class ="user" enctype=”multipart/form-data” method="POST" action="{{ route('podejrzyj') }}">
+                                                       <form class ="user" enctype=”multipart/form-data” method="POST" action="{{ route('podejrzyj') }}">
                                                             @csrf
                                                             
                                                             <div class="form-group upload">
-                                          
-                                                            <input id="csv" type="file" name="csv" class="form-control form-control-user upload"></input>    
+                                                                <div class="btn">
+                                                            <input id="csv" type="file" name="csv" class="form-control form-control-user upload"></input> 
+                                                            Kliknij pole aby wybrać plik</div>   
                                                             <input type="hidden" name="MAX_FILE_SIZE" value="512000"></input>
-                                                            </div>
+                                                                </div>
                                                             <div class="form-group">
                                                             </div>
                                                             <div class="form-group">
                                                                 <button type="submit" class="btn btn-primary btn-user btn-block">
                                                                     Załaduj na stronę
                                                                 </button>
+                                                            </div>
+                                                            <div class="p-6">
                                                             </div>
                                                         </form>
                                                     </div>
@@ -51,7 +55,7 @@
 <button type="submit" class="btn-google">Podejrzyj CSV</button>
 </div>
 </div>
-</div>
-</div>
 </div>-->
+</div>
+</div>
 @endsection
