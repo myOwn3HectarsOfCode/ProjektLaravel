@@ -27,6 +27,13 @@ class CsvController extends Controller
     public static $id_nagl = ''; //helps by looking for getElementsById in html
     public static $sciezka;
 
+    /**
+     * pobranie.
+     *
+     * @param Request request
+     *
+     * @return void
+     */
     public static function pobranie(Request $request)
     {
         $zawartosc = [];

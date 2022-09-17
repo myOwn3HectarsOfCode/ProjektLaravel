@@ -13,6 +13,9 @@ class DostawcaCsvRequest extends FormRequest
      */
     public function authorize()
     {
+        //passing on all rules what have set up -
+        // (but if we were to set them as false rules -
+        // the application wouldn't pass EXACTLY THESE RULES)
         return true;
     }
 
@@ -24,7 +27,7 @@ class DostawcaCsvRequest extends FormRequest
     public function rules()
     {
         return [
-            'csv' => 'required|file'
+            'csv' => 'required|file',
         ];
     }
 }
